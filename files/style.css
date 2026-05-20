@@ -1,0 +1,165 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --pageColor: rgb(22, 27, 46);
+    --focusMenu: rgb(64, 48, 100);
+}
+
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    background: url(./minimal-background-purple-color-with-two-overlapping-waves-suitable-for-design-needs-display-website-ui-and-others-free-photo.jpg);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tank{
+    background-color: rgb(17, 21, 37);
+    width: 90%;
+    height: 90vh;
+    border-radius: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.dropleft{
+    height: 100%;
+    width: 20%;
+    top: 90px;
+    transition: left .3s linear;
+    background-color: var(--pageColor);
+    z-index: 2;
+}
+
+
+.dropleft p{
+    color: white
+}
+
+.dropleft.active{
+    left: -0%;
+}
+
+.screen{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.screen p{
+    color: white;
+}
+
+.dropleft button{
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: start;
+    padding-left: 30px;
+    height: 40px;
+    color: white;
+    user-select: none;
+}
+
+.dropleft button:active{
+    border: none;
+    outline: none;
+}
+
+.sizeMenu{
+    background: var(--focusMenu);
+}
+
+.bitsMenu{
+    background: transparent;
+}
+
+.pageMenu{
+    background: transparent;
+}
+
+.betaMenu{
+    background: transparent;
+}
+
+.dlc{
+    align-self: flex-start;
+    margin: auto;
+    color: white;
+    border-radius: 20px;
+    background-color: var(--pageColor);
+    padding: 20px;
+}
+
+.size{
+    display: block;
+
+}
+
+.Depth{
+    display: none;
+}
+
+.browserSize{
+    display: none;
+}
+
+.cr{
+    display: none;
+    border: none;
+    transition: background-color .2s linear;
+    position: relative;
+    background-color: rgb(30, 36, 62);
+}
+
+.cr::before{
+    content: "Create Window";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 48, 81);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.cr:active:before{
+    top: -5px;
+}
+
+.cr:hover::before{
+    background-color: rgb(35, 43, 74);
+}
+
+.cr:hover{
+    background-color: rgb
+}
+
+.cr:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+/* .dropleft button:focus{
+    background-color: var(--focusMenu);
+} */
+
+/* ts ✌🥀 is insane */
